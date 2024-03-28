@@ -1,0 +1,2 @@
+# LAMBDA FUNCTIONS FOR REST API MANAGE PRODUCTS
+## Created by MonkeyDDeveloper

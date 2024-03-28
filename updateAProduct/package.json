@@ -1,0 +1,20 @@
+{
+  "name": "updateaproduct",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "del /q dist",
+    "build": "esbuild index.ts --bundle --minify --sourcemap --platform=node --target=es2020 --outfile=dist/index.js",
+    "postbuild": "cd dist && 7z a -tzip index.zip index.js*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.136",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^20.11.30",
+    "mongoose": "^8.2.3"
+  }
+}
